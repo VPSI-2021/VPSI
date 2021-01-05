@@ -61,7 +61,7 @@ We use 28 industrial grade vehicle CAD models(including five vehicle classes: co
 * The label results are under /label_result.
 * The camera information are under /calib.
 * We provide 28 car models, which are under /models.
-![](https://github.com/VPSI-2021/VPSI/blob/main/master/3D_Tool/vis/tool2.png)
+![](https://github.com/VPSI-2021/VPSI/blob/main/3D_Tool/vis/tool2.png)
 
 
 
