@@ -3,4 +3,4 @@ Set the kitti templates model path then run texture.py to reconstruct texturemap
 ```
 python texture.py
 ```
-<img src="https://github.com/zongdai/PerMo/blob/master/vis/texture_sample.png" width="860"/>
+<img src="https://github.com/VPSI-2021/VPSI/blob/main/vis/texture_sample.png" width="860"/>
