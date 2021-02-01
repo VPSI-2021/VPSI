@@ -15,14 +15,14 @@ python apply_net.py dump configs/densepose_rcnn_R_101_FPN_DL_WC2_s1x.yaml kitti3
 ```
 To vis stage_1_res.pkl, modify config.yaml to set input(input_image_dir, stage1_network_res) and ouput path.
 ```
-python vis_pkl.py 
+python vis_pkl.py
 ```
 <img src="https://github.com/VPSI-2021/VPSI/blob/main/vis/004047_part.png" width="860"/>
 <img src="https://github.com/VPSI-2021/VPSI/blob/main/vis/004047_u.png" width="860"/>
 <img src="https://github.com/VPSI-2021/VPSI/blob/main/vis/004047_v.png" width="860"/>
 
-Step 2. Sovle pose and reconstruct vehicle models from [Step 1's result](https://drive.google.com/file/d/1-3phQ23taaeO3mpo3z0DNAuMs60d40mI/view?usp=sharing).
-Download the [template_models](https://drive.google.com/file/d/10o8a_TQo3633ArHikg0Pgkzb-ZJNfw-e/view?usp=sharing), [simplication_template_models](https://drive.google.com/file/d/1FC685JatxTlHmRwtnItfEkSZLWs926Ut/view?usp=sharing), [camera calib](https://drive.google.com/file/d/1VmX_S3jCYnfuj8CLKuv6X2x1tZ5IiB6q/view?usp=sharing), [skp pre-trained model](https://drive.google.com/file/d/1H5Quk4s8kq2BEZLBBahmwRbetxu0qUO8/view?usp=sharing) and [estimated depth map](https://drive.google.com/file/d/1LVsyKJ4PLVMk-ECqQkMqE35ejPn0pBwS/view?usp=sharing). Modify config.yaml to set resource and ouput path.
+Step 2. Solve pose and reconstruct vehicle models from [Step 1's result](https://drive.google.com/file/d/1-3phQ23taaeO3mpo3z0DNAuMs60d40mI/view?usp=sharing).
+Download the [template_models](https://drive.google.com/file/d/10o8a_TQo3633ArHikg0Pgkzb-ZJNfw-e/view?usp=sharing), [simplication_template_models](https://drive.google.com/file/d/1FC685JatxTlHmRwtnItfEkSZLWs926Ut/view?usp=sharing), [camera calib](https://drive.google.com/file/d/1VmX_S3jCYnfuj8CLKuv6X2x1tZ5IiB6q/view?usp=sharing), [skp pre-trained model](https://drive.google.com/file/d/1H5Quk4s8kq2BEZLBBahmwRbetxu0qUO8/view?usp=sharing) and [estimated depth map](https://drive.google.com/file/d/1LVsyKJ4PLVMk-ECqQkMqE35ejPn0pBwS/view?usp=sharing). Modify config.yaml to set resource and output path.
 ```
 python solve.py
 ```
@@ -38,7 +38,7 @@ We use 28 industrial grade vehicle CAD models(including five vehicle classes: co
 
 ### Description
 
-* This tool can be used to label the 6DOF pose and type of the vehicles in images. 
+* This tool can be used to label the 6DOF pose and type of the vehicles in images.
 * We have successfully used this tool on Kitti and Apollo.
 
 
@@ -59,9 +59,41 @@ We use 28 industrial grade vehicle CAD models(including five vehicle classes: co
 * Choose car's type.
 * The raw images are under /images.
 * The label results are under /label_result.
-* The camera information are under /calib.
+* The camera information is under /calib.
 * We provide 28 car models, which are under /models.
 ![](https://github.com/VPSI-2021/VPSI/blob/main/3D_Tool/vis/tool2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
